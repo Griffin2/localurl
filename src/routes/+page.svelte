@@ -10,24 +10,67 @@
 
   const TRACKING_PARAMS = [
     /* UTM */
-    "utm_source", "utm_medium", "utm_campaign", "utm_term", "utm_content", "utm_id", "utm_cid",
+    "utm_source",
+    "utm_medium",
+    "utm_campaign",
+    "utm_term",
+    "utm_content",
+    "utm_id",
+    "utm_cid",
     /* Facebook */
-    "fbclid", "fb_action_ids", "fb_action_types", "fb_ref", "fb_source",
+    "fbclid",
+    "fb_action_ids",
+    "fb_action_types",
+    "fb_ref",
+    "fb_source",
     /* Google */
-    "gclid", "gclsrc", "dclid", "gbraid", "wbraid", "gad_source",
+    "gclid",
+    "gclsrc",
+    "dclid",
+    "gbraid",
+    "wbraid",
+    "gad_source",
     /* Microsoft */
     "msclkid",
     /* HubSpot */
-    "hsa_cam", "hsa_grp", "hsa_mt", "hsa_src", "hsa_ad", "hsa_acc", "hsa_net", "hsa_ver", "hsa_la", "hsa_ol", "hsa_kw",
+    "hsa_cam",
+    "hsa_grp",
+    "hsa_mt",
+    "hsa_src",
+    "hsa_ad",
+    "hsa_acc",
+    "hsa_net",
+    "hsa_ver",
+    "hsa_la",
+    "hsa_ol",
+    "hsa_kw",
     /* Mailchimp */
-    "mc_cid", "mc_eid",
+    "mc_cid",
+    "mc_eid",
     /* Adobe / Marketo */
-    "s_kwcid", "mkt_tok",
+    "s_kwcid",
+    "mkt_tok",
     /* Misc tracking */
-    "ref", "referrer", "affiliate", "affiliate_id", "partner_id", "click_id",
-    "campaign_id", "ad_id", "adgroup_id", "adset_id",
-    "_ga", "_gl", "_hsenc", "_hsmi", "_openstat",
-    "igshid", "si", "feature", "app", "src",
+    "ref",
+    "referrer",
+    "affiliate",
+    "affiliate_id",
+    "partner_id",
+    "click_id",
+    "campaign_id",
+    "ad_id",
+    "adgroup_id",
+    "adset_id",
+    "_ga",
+    "_gl",
+    "_hsenc",
+    "_hsmi",
+    "_openstat",
+    "igshid",
+    "si",
+    "feature",
+    "app",
+    "src",
     /* Twitter/X */
     "twclid",
     /* TikTok */
@@ -35,7 +78,8 @@
     /* Pinterest */
     "epik",
     /* Snapchat */
-    "sccid", "ScCid",
+    "sccid",
+    "ScCid",
   ];
 
   const TRACKING_SET = new Set(TRACKING_PARAMS.map((p) => p.toLowerCase()));
@@ -118,11 +162,11 @@ https://news.example.com/article/headline?utm_source=newsletter&utm_medium=email
   }
 
   let inputLineCount = $derived(
-    input.trim() ? input.split("\n").filter((l) => l.trim()).length : 0
+    input.trim() ? input.split("\n").filter((l) => l.trim()).length : 0,
   );
 </script>
 
-<TrustBar sourceUrl="https://github.com/user/localurl" />
+<TrustBar sourceUrl="https://github.com/Griffin2/localurl" />
 
 <div class="page-shell">
   <ToolHeader
@@ -187,7 +231,8 @@ https://news.example.com/article/headline?utm_source=newsletter&utm_medium=email
       <summary class="tracker-summary">What gets removed?</summary>
       <div class="tracker-list">
         <span class="tracker-group">
-          <strong>Ad platforms:</strong> utm_*, fbclid, gclid, msclkid, twclid, ttclid, dclid, gbraid, wbraid
+          <strong>Ad platforms:</strong> utm_*, fbclid, gclid, msclkid, twclid, ttclid,
+          dclid, gbraid, wbraid
         </span>
         <span class="tracker-group">
           <strong>Email tools:</strong> mc_cid, mc_eid, _hsenc, _hsmi, mkt_tok
